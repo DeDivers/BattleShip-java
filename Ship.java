@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class Ship {
 	private int length;
 	private int xHead;
@@ -5,10 +6,14 @@ public class Ship {
 	private int xTail;
 	private int yTail;
 
+	public Ship(int length) {
+		this.length = length;
+	}
+
 	public Ship(int length, int xH, int yH, int xT, int yT) {
 		this.length = length;
 		if (xH != xT && yH != yT) {
-			
+
 		}
 		xHead = xH;
 		yHead = yH;
@@ -31,5 +36,13 @@ public class Ship {
 		length--;
 	}
 
+	public void setLocation(char axis, int start, int end, int other) {
+		if (axis == 'x') {
 
+		}
+	}
+
+	public ArrayList<Integer[]> location() {
+
+	}
 }
